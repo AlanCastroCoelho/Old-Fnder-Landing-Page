@@ -1,0 +1,733 @@
+@import url("https://fonts.googleapis.com/css2?family=Oswald:wght@300;400;700&family=Raleway:wght@400;800&display=swap");
+
+*,
+*:before,
+*:after {
+  margin: 0px;
+  padding: 0px;
+  outline: 0px;
+  box-sizing: border-box;
+}
+html {
+  scroll-behavior: smooth;
+}
+body {
+  font-family: "Raleway", sans-serif;
+  background: white;
+  color: black;
+}
+
+#nav-bar {
+    position: fixed;
+    top: 0;
+  background: white;
+  height: 75px;
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  z-index: 300;
+}
+
+.logo {
+  padding: 0 50px;
+  filter: brightness(1);
+}
+
+#header-img {
+  width: 138px;
+  height: 140px;
+}
+
+.menu {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+  margin-right: 30px;
+}
+
+.menu li {
+  margin-right: 5px;
+  background: white;
+  list-style: none;
+  transition: 0.1s;
+}
+
+.menu li a {
+  padding: 7px 13px;
+  text-decoration: none;
+  display: block;
+  color: black;
+}
+
+.menu li:hover {
+  border-style: solid;
+  border-width: 0px 0px 2px 0px;
+  border-color: red;
+}
+
+.menu li a:hover {
+}
+
+.btn-menu {
+  margin-right: 30px;
+  font-size: 25px;
+  cursor: pointer;
+  display: none;
+}
+
+.wrapper {
+}
+.wrapper-all-page {
+  width: 100%;
+  padding: 0;
+  margin: 0;
+}
+
+.hero-section {
+    position: relative;
+    top: 80px;
+  width: 100%;
+  height: 635px;
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+  color: #fff;
+  font-family: oswald;
+}
+
+.hero-section::before {
+  content: "";
+  position: absolute;
+  height: 635px;
+  width: 100%;
+  z-index: -1;
+  background-image: url(https://cdna.artstation.com/p/assets/images/images/032/037/444/original/emily-brown-ezgif-com-gif-maker-3.gif?1605288050);
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center;
+  filter: blur(3px);
+}
+
+.logo-hero {
+  width: 100%;
+  height: 110px;
+  margin-top: 0%;
+  padding: 0%;
+  display: flex;
+  justify-content: center;
+  align-items: flex-end;
+}
+
+#fender-logo-hero {
+  width: auto;
+  height: 100px;
+  position: relative;
+  top: 40px;
+  transform: rotate(-10deg);
+  filter: invert(1);
+}
+
+.hero-section h1 {
+  text-transform: uppercase;
+  font-size: 2.5rem;
+  margin-top: 5.5rem;
+  z-index: 200;
+}
+
+.hero-section h1:hover {
+  -webkit-text-stroke: 2px #fff;
+  color: transparent;
+}
+
+.hero-section p {
+  font-size: 1.2rem;
+  z-index: 100;
+  margin: 4rem 0 0 0;
+  padding: 0;
+  position: relative;
+  right: 13px;
+}
+
+.start-now {
+  font-size: 1.5rem;
+  text-transform: uppercase;
+  position: relative;
+  right: 13px;
+  text-shadow: 0 0 5px white;
+}
+
+.how-it {
+  margin-right: 3rem;
+  text-transform: uppercase;
+  font-size: 35px;
+}
+
+.separator {
+  height: 120px;
+  width: 100%;
+  margin: -5px 0 0 0;
+  background: black;
+  color: white;
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  overflow: hidden;
+}
+
+.video-container {
+  display: inline-block;
+  position: relative;
+  width: 30%;
+}
+
+.video-container iframe {
+  height: 100% !important;
+  width: 100% !important;
+}
+
+.play-the-songs {
+  margin: 5rem 0;
+}
+
+.play-the-songs-child {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  text-align: center;
+  margin: 0px;
+}
+
+h2 {
+  font-family: "Raleway", sans-serif;
+  font-weight: 800;
+  font-size: 45px;
+}
+
+.separator-2 {
+  height: 1.5rem;
+  width: 100%;
+}
+
+.separator-3 {
+  height: 3rem;
+  width: 100%;
+  padding: 25px 0px;
+}
+
+.red-line {
+  height: 4px;
+  width: 60px;
+  background: rgb(178, 1, 1);
+  position: absolute;
+}
+.slider-container {
+  width: 100%;
+  height: 300px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.box {
+  width: 300px;
+  height: 300px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin: 0 8px;
+  overflow: hidden;
+  border-radius: 10px;
+  cursor: pointer;
+}
+
+.song {
+  width: 100%;
+  height: 100%;
+  filter: saturate(10%);
+  transition: 0.5s;
+  object-fit: cover;
+}
+
+.song:hover {
+  filter: saturate(100%);
+  transform: scale(1.1);
+}
+
+.stylized-button {
+  font-family: Oswald;
+  letter-spacing: 0.5px;
+  padding: 16px 50px;
+  background: rgb(199, 16, 31);
+  border-style: none;
+  color: #fff;
+  font-weight: 800;
+  text-transform: uppercase;
+  font-size: 1.2rem;
+  cursor: pointer;
+}
+
+.stylized-button:hover {
+  background: #ac0b18;
+}
+
+.horizontal-bar {
+  color: black;
+}
+
+.skills {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: flex-start;
+  background-image: linear-gradient(
+      to right,
+      rgba(255, 231, 14, 0.6),
+      rgba(217, 9, 40, 1)
+    ),
+    url(https://cdn.mos.cms.futurecdn.net/UbDN3Hkwbj5FNgtwQSf5zi.jpg);
+  background-attachment: fixed;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+.skills-left {
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  align-items: flex-start;
+  padding: 142px 60px;
+
+  color: #fff;
+  position: sticky;
+  top: 0px;
+}
+
+.header-skills {
+  text-align: justify;
+  font-size: 2.2rem;
+  margin: 0px;
+}
+
+.skills-info {
+  text-align: justify;
+}
+
+.sticky-skills {
+}
+
+.skills-right {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  justify-content: center;
+  padding: 60px 0px;
+  height: 800px;
+}
+
+.row-cards {
+  display: flex;
+  flex-direction: row;
+  justify-content: flex-start;
+  align-items: center;
+}
+
+.cards {
+  width: 230px;
+  height: 320px;
+  display: flex;
+  overflow: hidden;
+  flex-direction: column;
+  background: white;
+  margin: 15px;
+  border-radius: 5px;
+  box-shadow: 3px 3px 10px 0.1px rgba(0, 0, 0, 0.5);
+  transition: all 0.5s ease;
+  cursor: pointer;
+}
+.cards:hover {
+  position: relative;
+  transform: translateY(-3%);
+  box-shadow: 3px 5px 10px 0.1px rgba(0, 0, 0, 0.8);
+}
+.card-img-cont {
+  position: relative;
+  width: 100%;
+  height: 128px;
+}
+
+.photo-header-cards {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  overflow: hidden;
+}
+
+.card-info {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  justify-content: space-between;
+  padding: 15px;
+}
+
+.card-title {
+  font-size: 23px;
+}
+
+.tres-mil-plus {
+  font-size: 26px;
+}
+
+.separator-inf-cards {
+  height: 18px;
+}
+
+.card-inf {
+  font-size: 15px;
+  line-height: 25px;
+}
+
+.stylized-button {
+  font-family: Oswald;
+  letter-spacing: 0.5px;
+  padding: 18px 50px;
+  background: rgb(199, 16, 31);
+  border-style: none;
+  color: #fff;
+  font-weight: 800;
+  text-transform: uppercase;
+  font-size: 1.2rem;
+}
+
+.stylized-button:hover {
+  background: #ac0b18;
+}
+
+.learn-more-about-lssn {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  background: rgb(230, 230, 230);
+}
+
+.more-lessn-wrap {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+}
+
+.lessons {
+  font-weight: 800;
+  font-size: 2.2rem;
+  color: white;
+  font-family: "Raleway", sans-serif;
+  text-shadow: 2px 2px 5px rgba(255, 255, 255, 0.4);
+}
+
+.photo-mre-lssn {
+  display: flex;
+  justify-content: end;
+  align-items: flex-end;
+  padding: 20px;
+  width: 300px;
+  height: 365px;
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  box-shadow: 0 0 5px 5px rgba(0, 0, 0, 0.5);
+  box-shadow: 3px 5px 5px 5px rgba(0, 0, 0, 0.5);
+  transition: all 0.4s ease;
+  cursor: pointer;
+}
+.photo-mre-lssn:hover {
+  position: relative;
+  transform: translateY(-3%);
+  box-shadow: 3px 5px 10px 5px rgba(0, 0, 0, 0.5);
+}
+.photo-mre-lssn:nth-child(2) {
+  margin: 0px 80px;
+}
+.guitar-bckg {
+  background-image: url(https://i.inews.co.uk/content/uploads/2020/07/PRI_158040849-1200x675.jpg);
+}
+.bass-bckg {
+  background-image: url(https://hub.yamaha.com/wp-content/uploads/2022/05/Feature3_5-StringTips.jpeg);
+}
+
+.uku-bckg {
+  background-image: url(https://images.pexels.com/photos/346709/pexels-photo-346709.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1);
+}
+
+.get-started {
+  background-image: url(https://c0.wallpaperflare.com/preview/541/913/242/cellphone-close-up-female-girl.jpg);
+  background-repeat: no-repeat;
+  background-size: cover;
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  height: 530px;
+  width: 100%;
+  color: #fff;
+  font-size: 1.4rem;
+}
+
+.gt-started-lft {
+  display: flex;
+  flex-direction: column;
+  padding-left: 150px;
+  font-size: 1.3rem;
+  width: 50%;
+}
+
+h6 {
+  font-size: 2.2rem;
+}
+
+.gt-started-rght {
+  width: 50%;
+}
+
+.gt-started-rght img {
+  width: 420px;
+  position: relative;
+  top: 180px;
+  left: 50px;
+}
+
+.market-container {
+  margin-top: 20px;
+}
+
+.markets-logo {
+  width: 138px;
+  height: 45px;
+}
+
+footer {
+  overflow: hidden;
+  background: rgb(34, 34, 34);
+}
+
+.footer-wrapper {
+  padding: 0px 20px;
+
+  height: 600px;
+  width: 100%;
+  display: grid;
+  grid-template-columns: auto 1fr;
+  grid-template-rows: 200px auto;
+  grid-template-areas:
+    "head-logo head-form"
+    ". links";
+  grid-gap: 0px 5px;
+  color: #fff;
+}
+
+#fender-logo-footer {
+  grid-area: head-logo;
+  width: auto;
+  height: 58px;
+  filter: invert(1);
+  justify-self: end;
+  margin-right: 3rem;
+  position: relative;
+  top: 60px;
+}
+.footer-text-and-form {
+  display: grid;
+  grid-area: head-form;
+  font-size: 1.5rem;
+  grid-template-columns: auto auto;
+  grid-template-rows: auto;
+  grid-template-areas: "text-footer form";
+  grid-gap: 3px 5px;
+}
+
+.footer-text {
+  grid-area: text-footer;
+  display: grid;
+  grid-template-columns: 100%;
+  grid-template-rows: 30% 70%;
+  grid-template-areas:
+    "title"
+    "body";
+  padding-top: 60px;
+}
+
+.footer-title {
+  grid-area: title;
+}
+.p-footer {
+  grid-area: body;
+  font-size: 0.9rem;
+  font-weight: 400;
+}
+
+.input {
+  display: flex;
+  flex-direction: row;
+  grid-area: form;
+  align-self: center;
+  justify-self: center;
+  border-style: solid;
+  border-color: grey;
+  padding: 8px;
+}
+
+#form {
+  position: relative;
+  z-index: 5;
+}
+
+input {
+  font-family: oswald;
+  font-size: 0.9rem;
+  transition: all 0.5s;
+}
+
+input[type="email"] {
+  padding: 0.5rem;
+  width: 25rem;
+  border-style: none;
+  color: grey;
+  background: transparent;
+}
+
+input[type="email"]:focus {
+  color: black;
+  background: #fff;
+}
+
+input[type="submit"] {
+  padding: 0.5rem 2rem;
+  background: rgb(165, 14, 26);
+  color: white;
+  border-style: none;
+  cursor: pointer;
+  position: relative;
+  margin-left: 15px;
+}
+
+.footer-links {
+  grid-area: links;
+  display: flex;
+  flex-direction: row;
+  font-size: 0.9rem;
+}
+
+.grey-line {
+  height: 1px;
+  width: 12%;
+  background: grey;
+  position: absolute;
+}
+
+.footer-link-header {
+  font-weight: 600;
+  margin-top: 19px;
+}
+
+.links-container {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  justify-content: flex-start;
+  margin: 0px auto;
+  width: 50%;
+}
+
+.links-container a {
+  margin-top: 19px;
+}
+
+.links-animation {
+  text-decoration: none;
+  color: grey;
+  transition: all 0.5s ease;
+}
+
+.links-animation:hover {
+  color: white;
+}
+
+.copy-legals {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+
+  font-size: 0.9rem;
+
+  padding-left: 20px;
+  padding-right: 20px;
+  height: 130px;
+  color: grey;
+  overflow: hidden;
+}
+
+.grey-line-legal {
+  height: 1px;
+  width: 100%;
+  background: grey;
+  position: absolute;
+  left: 0px;
+  display: flex;
+}
+
+.copyright {
+  margin-top: 20px;
+}
+
+.legals {
+  margin-top: 20px;
+}
+
+.legals a {
+  margin-right: 15px;
+  text-decoration: none;
+  color: grey;
+}
+
+/* */
+@media (max-width: 1215px) {
+  .cards {
+    width: 190px;
+    height: 340px;
+    display: flex;
+    overflow: hidden;
+    flex-direction: column;
+    background: white;
+    margin: 15px;
+    border-radius: 5px;
+    box-shadow: 3px 3px 10px 0.1px rgba(0, 0, 0, 0.5);
+    transition: all 0.5s ease;
+    cursor: pointer;
+  }
+  .cards:hover {
+    position: relative;
+    transform: translateY(-3%);
+    box-shadow: 3px 5px 10px 0.1px rgba(0, 0, 0, 0.8);
+  }
+
+  .photo-header-cards {
+    width: 230px;
+    height: 128px;
+  }
+
+  .card-info {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    justify-content: space-between;
+    padding: 15px;
+  }
+
+  .card-title {
+    font-size: 23px;
+  }
+}
