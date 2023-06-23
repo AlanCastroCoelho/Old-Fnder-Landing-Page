@@ -6,8 +6,8 @@
   <link rel="stylesheet" href="styles.css">
   <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.8.1/css/all.css" integrity="sha384-50oBUHEmvpQ+1lW4y57PTFmhCaXp0ML5d60M1M7uH2+nqUivzIebhndOJK28anvf" crossorigin="anonymous">
   <script src="https://kit.fontawesome.com/aa37f7d062.js" crossorigin="anonymous"></script>
+  <link rel="stylesheet" type="text/css" href="https://cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.css"/>
   <script src="javascript.js"></script>
-
 </head>
 <body>
   <header id="header">
@@ -17,15 +17,18 @@
       <img id="header-img" src="https://logodownload.org/wp-content/uploads/2014/09/fender-logo-0.png" alt="fender-logo">
     </div>
 </a>
-      <ul class="menu">
-          <li><a class="nav-link" href="#how-it-works">How it Works</a></li>
-          <li><a class="nav-link" href="#skills">Skills</a></li>
-          <li><a class="nav-link" href="#learn-more">Learn</a></li>
-          <li><a class="nav-link" href="#app">App</a></li>
-          <li><a class="nav-link" href="#contact">Contact</a></li>
+      <ul class="nav-links">
+          <li><a class="nav-link" href="#how-it-works" onclick="closeNav()">How it Works</a></li>
+          <li><a class="nav-link" href="#skills" onclick="closeNav()">Skills</a></li>
+          <li><a class="nav-link" href="#learn-more" onclick="closeNav()">Learn</a></li>
+          <li><a class="nav-link" href="#app" onclick="closeNav()">App</a></li>
+          <li><a class="nav-link" href="#contact" onclick="closeNav()">Contact</a></li>
       </ul>
-<span class="btn-menu">
-  <i class="fas fa-bars"></i></span>
+      <div class="hamburger" onclick="toggleNav()">
+        <div class="line"></div>
+        <div class="line"></div>
+        <div class="line"></div>
+      </div>
     </nav>
     <section class="hero-section" id="hero">
       
@@ -49,26 +52,57 @@
     </div>
     <section class="play-the-songs">
       <div class="play-the-songs-child">
-      <h2 class="subtitles">Play the songs you love</h2>
+      <h2 class="title-section">Play the songs you love</h2>
       <div class="separator-2"></div>
-      <p>From Classic tunes to the latest hits,<br> learn to play 1000s of songs in<br> our extensive library</p>
+      <p class="subtitle">From Classic tunes to the latest hits,<br> learn to play 1000s of songs in<br> our extensive library</p>
       <div class="separator-3"></div>
 
-     <div class="slider-container">
-       <div class="box">
-         
-<img src="https://images.ctfassets.net/r1mvpfown1y6/5bEQtLkf7xBJv6kGogJUUl/63fbaae11fe424095395f068743c0ea9/EdSheeran_3up_736x736.jpg?w=800&q=50" alt="pefect-ed-sheeran-song" class="song" id="img-1"></div>
-<div class="box">
-<img src="https://stuff.fendergarage.com/images/Q/3/v/artwork-here-comes-the-sun@2x.jpg" alt="pefect-ed-sheeran-song" class="song">
-</div>
-<div class="box">
-  
-<img src="https://i.scdn.co/image/ab67706c0000da8485573a52291906aea1af4f43" alt="pefect-ed-sheeran-song" class="song">
-</div>
-<div class="box">
-<img src="https://stuff.fendergarage.com/images/j/I/t/artwork-when-the-partys-over@2x.jpg" alt="pefect-ed-sheeran-song" class="song">
-</div>
-       </div>
+     
+        <div class="slider">
+          <div class="box">
+            <img src="https://stuff.fendergarage.com/images/F/i/i/kill-em-all_metallica_200x200.jpg"  class="song">
+          </div>
+          <div class="box">
+            <img src="https://stuff.fendergarage.com/images/Q/3/v/artwork-here-comes-the-sun@2x.jpg"  class="song">
+          </div>
+          <div class="box">
+            <img src="https://i.scdn.co/image/ab67706c0000da8485573a52291906aea1af4f43"  class="song">
+          </div>
+          <div class="box">
+            <img src="https://stuff.fendergarage.com/images/j/I/t/artwork-when-the-partys-over@2x.jpg"  class="song">
+          </div>
+
+          <div class="box">
+            <img src="https://stuff.fendergarage.com/images/e/C/M/1203.So-Are_You_Experienced_Deluxe_Version_The_Jimi_Hendrix_Experience-20190801_140147_200x200@2x.jpg"  class="song">
+          </div>
+
+          <div class="box">
+            <img src="https://stuff.fendergarage.com/images/S/s/e/942.So%20-%20%20Deluxe%20-%20Ed%20Sheeran_200x200@2x.jpg"  class="song">
+          </div>
+
+          <div class="box">
+            <img src="https://i0.wp.com/www.ghostcultmag.com/wp-content/uploads/Metallica-and-Fender-Top-10-Riffs.jpg?resize=584%2C584&ssl=1"  class="song">
+          </div>
+
+          <div class="box">
+            <img src="https://stuff.fendergarage.com/images/Q/r/p/869.So%20-%20Rage%20Against%20the%20Machine%20-%20Rage%20Against%20the%20Machine_400x400.jpg"  class="song">
+          </div>
+
+          <div class="box">
+            <img src="https://images.ctfassets.net/r1mvpfown1y6/5bEQtLkf7xBJv6kGogJUUl/63fbaae11fe424095395f068743c0ea9/EdSheeran_3up_736x736.jpg?w=800&q=50"  class="song" >
+          </div>
+          <div class="box">
+            <img src="https://images.ctfassets.net/r1mvpfown1y6/5bEQtLkf7xBJv6kGogJUUl/63fbaae11fe424095395f068743c0ea9/EdSheeran_3up_736x736.jpg?w=800&q=50"  class="song" id="img-1">
+          </div>
+          <div class="box">
+            <img src="https://stuff.fendergarage.com/images/r/J/x/666.So_200x200.jpg" alt="perfect-ed-sheeran-song" class="song">
+          </div>
+          <div class="box">
+            <img src="https://stuff.fendergarage.com/images/g/Q/J/francis-trouble_albert-hammond-jr_200x200.jpg" alt="perfect-ed-sheeran-song" class="song">
+          </div>
+          
+        </div>
+
 
 
     
@@ -87,9 +121,10 @@
           <p class="skills-info">Learn chords, scales and techniques with <br>cool app features that help you level up in<br> your musical journey.</p>
         
         </div>
+        
         <div class="skills-right">
-          <div class="row-cards">
-          <div class="cards">
+
+          <div class="cards card-1">
             <div class="card-img-cont">
               <img src="https://stuff.fendergarage.com/images/5/o/7/play-unsubscribed-teaser-poster-opt.jpg" class="photo-header-cards">
             </div>
@@ -101,7 +136,7 @@
             </div>
             
           </div>
-           <div class="cards">
+           <div class="cards card-2">
             <div class="card-img-cont">
               <img src="https://www.rollingstone.com/wp-content/uploads/2018/10/Fender_Play_Lifestyle_6-1597.jpeg" class="photo-header-cards">
             </div>
@@ -113,7 +148,7 @@
             </div>
             
           </div>
-           <div class="cards">
+           <div class="cards card-3">
             <div class="card-img-cont">
               <img src="https://stuff.fendergarage.com/images/V/1/X/app-03@2x.jpg" class="photo-header-cards">
             </div>
@@ -123,9 +158,7 @@
              <p class="card-inf">Improve your rhythm skills and get the feeling of jamming with a band.</p>  
             </div>
           </div>
-        </div>
-<div class="row-cards">
-          <div class="cards">
+          <div class="cards card-4">
             <div class="card-img-cont">
               <img src="https://i.pinimg.com/736x/cf/af/fd/cfaffda4eb0dd2f089a07f64f8f74aac--michael-jackson-wallpaper-twitter-cover.jpg" class="photo-header-cards">
             </div>
@@ -137,7 +170,7 @@
             </div>
             
           </div>
-           <div class="cards">
+           <div class="cards card-5">
              <div class="card-img-cont">
               <img src="https://stuff.fendergarage.com/images/W/c/i/app-05@2x.jpg" class="photo-header-cards">
             </div>
@@ -149,7 +182,7 @@
             </div>
             
           </div>
-           <div class="cards">
+           <div class="cards card-6">
              <div class="card-img-cont">
               <img src="https://stuff.fendergarage.com/images/d/g/s/app-06@2x.jpg" class="photo-header-cards"></div>
               <div class="card-info">
@@ -158,14 +191,16 @@
              <p class="card-inf">Share your progress, connect with instructors and tune into our weekly live show featuring special guests.</p>  
             </div>
           </div>
-        </div>
+ 
         </div>
       </section>
 <section class="learn-more-about-lssn" id="learn-more">
-  <div class="separator-3"></div>
-<h3 class="subtitles">Learn More About
- Guitar, Bass and Ukulele Lessons</h3>
- <div class="separator-3"></div>
+
+<h3 class="title-section">Learn More About
+</h3>
+<div class="separator-2"></div>
+ <p class="subtitle"> Guitar, Bass and Ukulele Lessons</p>
+
  <div class="more-lessn-wrap">
  <div class="photo-mre-lssn guitar-bckg">
  <span class="lessons">Guitar</span>
@@ -178,16 +213,17 @@
  </div>
 
  </div>
-<div class="separator-3"></div>
+
 </section>
 <section class="get-started" id="app">
 
      <div class="gt-started-lft">
+<div class="left-txt-cont">
      <p>AVAILABLE ACROSS WEB, TABLET & <br>MOBILE</p>
      <div class="separator-2"></div>
      <h6>Get Started</h6>
+     <div class="red-line"></div>
 <div class="separator-3">
-  <div class="red-line"></div>
 </div>
   
 <div class="market-container">
@@ -195,7 +231,9 @@
   <a href="#"><img src="https://upload.wikimedia.org/wikipedia/commons/thumb/7/78/Google_Play_Store_badge_EN.svg/2560px-Google_Play_Store_badge_EN.svg.png" alt="" class="markets-logo"></a>
 </div>
 
-     </div>
+</div> 
+
+</div>
 
      <div class="gt-started-rght">
        <img src="https://images.squarespace-cdn.com/content/v1/5968ff8c2994ca0bae43cd18/1617998359314-9ENUW9HSPY24VFWXC3IK/laptopandiphone.png" alt="">
@@ -289,6 +327,8 @@
 </div>
 </div>
 </footer>
-
+<script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.min.js"></script>
+<script src="slider.js"></script>
 </body>
 </html>
