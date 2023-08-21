@@ -1,338 +1,457 @@
 <!DOCTYPE html>
 <html>
-<head>
-  <meta charset="UTF-8">
-  <meta property="og:image" content="./Assets/Page Preview Fender.jpg">
-  <meta property="og:image:width" content="1200">
-  <meta property="og:image:height" content="627">
-  <title>Fender Landing Page</title>
-  <link rel="icon" type="image/png"  href="/Assets/Icono.png">
-  <link rel="stylesheet" href="styles.css">
-  <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.8.1/css/all.css" integrity="sha384-50oBUHEmvpQ+1lW4y57PTFmhCaXp0ML5d60M1M7uH2+nqUivzIebhndOJK28anvf" crossorigin="anonymous">
-  <script src="https://kit.fontawesome.com/aa37f7d062.js" crossorigin="anonymous"></script>
-  <link rel="stylesheet" type="text/css" href="https://cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.css"/>
-  <script src="javascript.js"></script>
-</head>
-<body>
-  <header id="header">
-    <nav id="nav-bar">
+  <head>
+    <meta charset="UTF-8" />
+    <meta property="og:image" content="./Assets/Page Preview Fender.jpg" />
+    <meta property="og:image:width" content="1200" />
+    <meta property="og:image:height" content="627" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Fender Landing Page</title>
+    <link rel="icon" type="image/png" href="/Assets/Icono.png" />
+    <link
+      rel="stylesheet"
+      href="https://use.fontawesome.com/releases/v5.8.1/css/all.css"
+      integrity="sha384-50oBUHEmvpQ+1lW4y57PTFmhCaXp0ML5d60M1M7uH2+nqUivzIebhndOJK28anvf"
+      crossorigin="anonymous"
+    />
+    <link rel="stylesheet" href="styles.css" />
+    <script
+      src="https://kit.fontawesome.com/aa37f7d062.js"
+      crossorigin="anonymous"
+    ></script>
+    <link
+      rel="stylesheet"
+      type="text/css"
+      href="https://cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.css"
+    />
+  </head>
+  <body>
+    <header id="header">
+      <nav id="nav-bar">
         <a href="#hero">
-      <div class="logo" >
-      <img id="header-img" src="https://logodownload.org/wp-content/uploads/2014/09/fender-logo-0.png" alt="fender-logo">
-    </div>
-</a>
-      <ul class="nav-links">
-          <li><a class="nav-link" href="#how-it-works" onclick="closeNav()">How it Works</a></li>
-          <li><a class="nav-link" href="#skills" onclick="closeNav()">Skills</a></li>
-          <li><a class="nav-link" href="#learn-more" onclick="closeNav()">Learn</a></li>
+          <div class="logo">
+            <img
+              id="header-img"
+              src="https://logodownload.org/wp-content/uploads/2014/09/fender-logo-0.png"
+              alt="fender-logo"
+            />
+          </div>
+        </a>
+        <ul class="nav-links">
+          <li>
+            <a class="nav-link" href="#how-it-works" onclick="closeNav()"
+              >How it Works</a
+            >
+          </li>
+          <li>
+            <a class="nav-link" href="#skills" onclick="closeNav()">Skills</a>
+          </li>
+          <li>
+            <a class="nav-link" href="#learn-more" onclick="closeNav()"
+              >Learn</a
+            >
+          </li>
           <li><a class="nav-link" href="#app" onclick="closeNav()">App</a></li>
-          <li><a class="nav-link" href="#contact" onclick="closeNav()">Contact</a></li>
-      </ul>
-      <div class="hamburger" onclick="toggleNav()">
-        <div class="line"></div>
-        <div class="line"></div>
-        <div class="line"></div>
-      </div>
-    </nav>
-    <section class="hero-section" id="hero">
-      
-      <div class="logo-hero">
-      <img id="fender-logo-hero" src="https://cdn.freebiesupply.com/logos/large/2x/fender-3-logo-png-transparent.png" alt="fender-logo">
-      </div>
-      <h1>We don't just make guitars.<br>We make players.</h1>
-  
-      <p>Learn to play guitar online</p>
-      <span class="start-now">start now!</span>
-      
-    </section>
- 
-  </header>
+          <li>
+            <a class="nav-link" href="#contact" onclick="closeNav()">Contact</a>
+          </li>
+        </ul>
+        <div class="hamburger" onclick="toggleNav()">
+          <div class="line"></div>
+          <div class="line"></div>
+          <div class="line"></div>
+        </div>
+      </nav>
+      <section class="hero-section" id="hero">
+        <div class="logo-hero">
+          <img
+            id="fender-logo-hero"
+            src="https://cdn.freebiesupply.com/logos/large/2x/fender-3-logo-png-transparent.png"
+            alt="fender-logo"
+          />
+        </div>
+        <h1>We don't just make guitars.<br />We make players.</h1>
 
-     <div class="separator" id="how-it-works">
-     <h3 class="how-it">How it Works</h3>
-     <div class="video-container">
-        <iframe width="560" height="315" id="video" src="https://www.youtube.com/embed/h6ada1kvgEw?controls=0" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
-    </div>
+        <p>Learn to play guitar online</p>
+        <span class="start-now">start now!</span>
+      </section>
+    </header>
+
+    <div class="separator" id="how-it-works">
+      <h3 class="how-it">How it Works</h3>
+      <div class="video-container">
+        <iframe
+          width="560"
+          height="315"
+          id="video"
+          src="https://www.youtube.com/embed/h6ada1kvgEw?controls=0"
+          title="YouTube video player"
+          frameborder="0"
+          allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+          allowfullscreen
+        ></iframe>
+      </div>
     </div>
     <section class="play-the-songs">
       <div class="play-the-songs-child">
-      <h2 class="title-section">Play the songs you love</h2>
-      <div class="separator-2"></div>
-      <p class="subtitle">From Classic tunes to the latest hits,<br> learn to play 1000s of songs in<br> our extensive library</p>
-      <div class="separator-3"></div>
+        <h2 class="title-section">Play the songs you love</h2>
+        <div class="separator-2"></div>
+        <p class="subtitle">
+          From Classic tunes to the latest hits,<br />
+          learn to play 1000s of songs in<br />
+          our extensive library
+        </p>
+        <div class="separator-3"></div>
 
-     
         <div class="slider">
           <div class="box">
-            <img src="https://stuff.fendergarage.com/images/F/i/i/kill-em-all_metallica_200x200.jpg"  class="song">
+            <img
+              src="https://stuff.fendergarage.com/images/F/i/i/kill-em-all_metallica_200x200.jpg"
+              class="song"
+            />
           </div>
           <div class="box">
-            <img src="https://stuff.fendergarage.com/images/Q/3/v/artwork-here-comes-the-sun@2x.jpg"  class="song">
+            <img
+              src="https://stuff.fendergarage.com/images/Q/3/v/artwork-here-comes-the-sun@2x.jpg"
+              class="song"
+            />
           </div>
           <div class="box">
-            <img src="https://i.scdn.co/image/ab67706c0000da8485573a52291906aea1af4f43"  class="song">
+            <img
+              src="https://i.scdn.co/image/ab67706c0000da8485573a52291906aea1af4f43"
+              class="song"
+            />
           </div>
           <div class="box">
-            <img src="https://stuff.fendergarage.com/images/j/I/t/artwork-when-the-partys-over@2x.jpg"  class="song">
+            <img
+              src="https://stuff.fendergarage.com/images/j/I/t/artwork-when-the-partys-over@2x.jpg"
+              class="song"
+            />
           </div>
 
           <div class="box">
-            <img src="https://stuff.fendergarage.com/images/e/C/M/1203.So-Are_You_Experienced_Deluxe_Version_The_Jimi_Hendrix_Experience-20190801_140147_200x200@2x.jpg"  class="song">
+            <img
+              src="https://stuff.fendergarage.com/images/e/C/M/1203.So-Are_You_Experienced_Deluxe_Version_The_Jimi_Hendrix_Experience-20190801_140147_200x200@2x.jpg"
+              class="song"
+            />
           </div>
 
           <div class="box">
-            <img src="https://stuff.fendergarage.com/images/S/s/e/942.So%20-%20%20Deluxe%20-%20Ed%20Sheeran_200x200@2x.jpg"  class="song">
+            <img
+              src="https://stuff.fendergarage.com/images/S/s/e/942.So%20-%20%20Deluxe%20-%20Ed%20Sheeran_200x200@2x.jpg"
+              class="song"
+            />
           </div>
 
           <div class="box">
-            <img src="https://i0.wp.com/www.ghostcultmag.com/wp-content/uploads/Metallica-and-Fender-Top-10-Riffs.jpg?resize=584%2C584&ssl=1"  class="song">
+            <img
+              src="https://i0.wp.com/www.ghostcultmag.com/wp-content/uploads/Metallica-and-Fender-Top-10-Riffs.jpg?resize=584%2C584&ssl=1"
+              class="song"
+            />
           </div>
 
           <div class="box">
-            <img src="https://stuff.fendergarage.com/images/Q/r/p/869.So%20-%20Rage%20Against%20the%20Machine%20-%20Rage%20Against%20the%20Machine_400x400.jpg"  class="song">
+            <img
+              src="https://stuff.fendergarage.com/images/Q/r/p/869.So%20-%20Rage%20Against%20the%20Machine%20-%20Rage%20Against%20the%20Machine_400x400.jpg"
+              class="song"
+            />
           </div>
 
           <div class="box">
-            <img src="https://stuff.fendergarage.com/images/a/s/o/1106.So%20-%20Bleach%2020th%20Anniversary%20Deluxe%20Edition%20-%20Nirvana_200x200.jpg"  class="song" >
+            <img
+              src="https://stuff.fendergarage.com/images/a/s/o/1106.So%20-%20Bleach%2020th%20Anniversary%20Deluxe%20Edition%20-%20Nirvana_200x200.jpg"
+              class="song"
+            />
           </div>
           <div class="box">
-            <img src="https://stuff.fendergarage.com/images/z/y/O/1211.So-Abbey_Road_Remastered_The_Beatles-20190801_140055_200x200.jpg"  class="song">
+            <img
+              src="https://stuff.fendergarage.com/images/z/y/O/1211.So-Abbey_Road_Remastered_The_Beatles-20190801_140055_200x200.jpg"
+              class="song"
+            />
           </div>
           <div class="box">
-            <img src="https://stuff.fendergarage.com/images/r/J/x/666.So_200x200.jpg" class="song">
+            <img
+              src="https://stuff.fendergarage.com/images/r/J/x/666.So_200x200.jpg"
+              class="song"
+            />
           </div>
           <div class="box">
-            <img src="https://stuff.fendergarage.com/images/g/Q/J/francis-trouble_albert-hammond-jr_200x200.jpg" class="song">
+            <img
+              src="https://stuff.fendergarage.com/images/g/Q/J/francis-trouble_albert-hammond-jr_200x200.jpg"
+              class="song"
+            />
           </div>
-          
         </div>
 
+        <div class="separator-3"></div>
 
+        <button class="stylized-button" type="button">View all songs</button>
+        <div class="separator-2"></div>
+      </div>
+    </section>
+    <section class="skills" id="skills">
+      <div class="skills-left">
+        <h3 class="header-skills">
+          Have Fun<br />
+          Building the Skills<br />
+          You Need
+        </h3>
+        <div class="separator-2"></div>
+        <p class="skills-info">
+          Learn chords, scales and techniques with <br />cool app features that
+          help you level up in<br />
+          your musical journey.
+        </p>
+      </div>
 
-    
-      <div class="separator-3"></div>
-
-      <button class="stylized-button" type="button">View all songs</button>
+      <div class="skills-right">
+        <div class="cards card-1">
+          <div class="card-img-cont">
+            <img
+              src="https://stuff.fendergarage.com/images/5/o/7/play-unsubscribed-teaser-poster-opt.jpg"
+              class="photo-header-cards"
+            />
+          </div>
+          <div class="card-info">
+            <h5 class="card-title">
+              <span class="tres-mil-plus">3000+</span> Lessons
+            </h5>
+            <div class="separator-inf-cards"></div>
+            <p class="card-inf">
+              Learn through bite-sized lessons from expert instructors.
+            </p>
+          </div>
+        </div>
+        <div class="cards card-2">
+          <div class="card-img-cont">
+            <img
+              src="https://www.rollingstone.com/wp-content/uploads/2018/10/Fender_Play_Lifestyle_6-1597.jpeg"
+              class="photo-header-cards"
+            />
+          </div>
+          <div class="card-info">
+            <h5 class="card-title">Chord Challenge</h5>
+            <div class="separator-inf-cards"></div>
+            <p class="card-inf">
+              Build speed as you practice switching between chords — then beat
+              your high score.
+            </p>
+          </div>
+        </div>
+        <div class="cards card-3">
+          <div class="card-img-cont">
+            <img
+              src="https://stuff.fendergarage.com/images/V/1/X/app-03@2x.jpg"
+              class="photo-header-cards"
+            />
+          </div>
+          <div class="card-info">
+            <h5 class="card-title">Backing Tracks</h5>
+            <div class="separator-inf-cards"></div>
+            <p class="card-inf">
+              Improve your rhythm skills and get the feeling of jamming with a
+              band.
+            </p>
+          </div>
+        </div>
+        <div class="cards card-4">
+          <div class="card-img-cont">
+            <img
+              src="https://i.pinimg.com/736x/cf/af/fd/cfaffda4eb0dd2f089a07f64f8f74aac--michael-jackson-wallpaper-twitter-cover.jpg"
+              class="photo-header-cards"
+            />
+          </div>
+          <div class="card-info">
+            <h5 class="card-title">Collections</h5>
+            <div class="separator-inf-cards"></div>
+            <p class="card-inf">
+              Dive into your favorite artists, genres and techniques with
+              curated groups of lessons.
+            </p>
+          </div>
+        </div>
+        <div class="cards card-5">
+          <div class="card-img-cont">
+            <img
+              src="https://stuff.fendergarage.com/images/W/c/i/app-05@2x.jpg"
+              class="photo-header-cards"
+            />
+          </div>
+          <div class="card-info">
+            <h5 class="card-title">Weekly Giveaways</h5>
+            <div class="separator-inf-cards"></div>
+            <p class="card-inf">
+              Stay motivated and keep up your weekly practice Streak for a
+              chance to win Fender gear.
+            </p>
+          </div>
+        </div>
+        <div class="cards card-6">
+          <div class="card-img-cont">
+            <img
+              src="https://stuff.fendergarage.com/images/d/g/s/app-06@2x.jpg"
+              class="photo-header-cards"
+            />
+          </div>
+          <div class="card-info">
+            <h5 class="card-title">Community</h5>
+            <div class="separator-inf-cards"></div>
+            <p class="card-inf">
+              Share your progress, connect with instructors and tune into our
+              weekly live show featuring special guests.
+            </p>
+          </div>
+        </div>
+      </div>
+    </section>
+    <section class="learn-more-about-lssn" id="learn-more">
+      <h3 class="title-section">Learn More About</h3>
       <div class="separator-2"></div>
+      <p class="subtitle">Guitar, Bass and Ukulele Lessons</p>
+
+      <div class="more-lessn-wrap">
+        <div class="photo-mre-lssn guitar-bckg">
+          <span class="lessons">Guitar</span>
+        </div>
+        <div class="photo-mre-lssn bass-bckg">
+          <span class="lessons">Bass</span>
+        </div>
+        <div class="photo-mre-lssn uku-bckg">
+          <span class="lessons">Ukulele</span>
+        </div>
       </div>
-      </section>
-      <section class="skills" id="skills">
-        
-        <div class="skills-left">
-          
-<h3 class="header-skills">Have Fun<br> Building the Skills<br> You Need</h3>
+    </section>
+    <section class="get-started" id="app">
+      <div class="gt-started-lft">
+        <div class="left-txt-cont">
+          <p>AVAILABLE ACROSS WEB, TABLET & <br />MOBILE</p>
           <div class="separator-2"></div>
-          <p class="skills-info">Learn chords, scales and techniques with <br>cool app features that help you level up in<br> your musical journey.</p>
-        
+          <h6>Get Started</h6>
+          <div class="red-line"></div>
+          <div class="separator-3"></div>
+
+          <div class="market-container">
+            <a href="#"
+              ><img
+                src="https://upload.wikimedia.org/wikipedia/commons/thumb/e/eb/Download_on_the_App_Store_Badge_ESMX_RGB_blk.svg/2560px-Download_on_the_App_Store_Badge_ESMX_RGB_blk.svg.png"
+                alt=""
+                class="markets-logo"
+            /></a>
+            <a href="#"
+              ><img
+                src="https://upload.wikimedia.org/wikipedia/commons/thumb/7/78/Google_Play_Store_badge_EN.svg/2560px-Google_Play_Store_badge_EN.svg.png"
+                alt=""
+                class="markets-logo"
+            /></a>
+          </div>
         </div>
-        
-        <div class="skills-right">
-
-          <div class="cards card-1">
-            <div class="card-img-cont">
-              <img src="https://stuff.fendergarage.com/images/5/o/7/play-unsubscribed-teaser-poster-opt.jpg" class="photo-header-cards">
-            </div>
-              <div class="card-info">
-             <h5 class="card-title"><span class="tres-mil-plus">3000+</span> Lessons</h5>
-             <div class="separator-inf-cards"></div>
-             <p class="card-inf">Learn through bite-sized lessons from expert instructors.</p>
-              
-            </div>
-            
-          </div>
-           <div class="cards card-2">
-            <div class="card-img-cont">
-              <img src="https://www.rollingstone.com/wp-content/uploads/2018/10/Fender_Play_Lifestyle_6-1597.jpeg" class="photo-header-cards">
-            </div>
-              <div class="card-info">
-             <h5 class="card-title">Chord Challenge</h5>
-             <div class="separator-inf-cards"></div>
-             <p class="card-inf">Build speed as you practice switching between chords — then beat your high score.</p>
-              
-            </div>
-            
-          </div>
-           <div class="cards card-3">
-            <div class="card-img-cont">
-              <img src="https://stuff.fendergarage.com/images/V/1/X/app-03@2x.jpg" class="photo-header-cards">
-            </div>
-              <div class="card-info">
-             <h5 class="card-title">Backing Tracks</h5>
-             <div class="separator-inf-cards"></div>
-             <p class="card-inf">Improve your rhythm skills and get the feeling of jamming with a band.</p>  
-            </div>
-          </div>
-          <div class="cards card-4">
-            <div class="card-img-cont">
-              <img src="https://i.pinimg.com/736x/cf/af/fd/cfaffda4eb0dd2f089a07f64f8f74aac--michael-jackson-wallpaper-twitter-cover.jpg" class="photo-header-cards">
-            </div>
-              <div class="card-info">
-             <h5 class="card-title">Collections</h5>
-             <div class="separator-inf-cards"></div>
-             <p class="card-inf">Dive into your favorite artists, genres and techniques with curated groups of lessons.</p>
-              
-            </div>
-            
-          </div>
-           <div class="cards card-5">
-             <div class="card-img-cont">
-              <img src="https://stuff.fendergarage.com/images/W/c/i/app-05@2x.jpg" class="photo-header-cards">
-            </div>
-              <div class="card-info">
-             <h5 class="card-title">Weekly Giveaways</h5>
-             <div class="separator-inf-cards"></div>
-             <p class="card-inf">Stay motivated and keep up your weekly practice Streak for a chance to win Fender gear.</p>
-              
-            </div>
-            
-          </div>
-           <div class="cards card-6">
-             <div class="card-img-cont">
-              <img src="https://stuff.fendergarage.com/images/d/g/s/app-06@2x.jpg" class="photo-header-cards"></div>
-              <div class="card-info">
-             <h5 class="card-title">Community</h5>
-             <div class="separator-inf-cards"></div>
-             <p class="card-inf">Share your progress, connect with instructors and tune into our weekly live show featuring special guests.</p>  
-            </div>
-          </div>
- 
-        </div>
-      </section>
-<section class="learn-more-about-lssn" id="learn-more">
-
-<h3 class="title-section">Learn More About
-</h3>
-<div class="separator-2"></div>
- <p class="subtitle"> Guitar, Bass and Ukulele Lessons</p>
-
- <div class="more-lessn-wrap">
- <div class="photo-mre-lssn guitar-bckg">
- <span class="lessons">Guitar</span>
- </div>
- <div class="photo-mre-lssn bass-bckg">
-   <span class="lessons">Bass</span>
- </div>
-  <div class="photo-mre-lssn uku-bckg">
-    <span class="lessons">Ukulele</span>
- </div>
-
- </div>
-
-</section>
-<section class="get-started" id="app">
-
-     <div class="gt-started-lft">
-<div class="left-txt-cont">
-     <p>AVAILABLE ACROSS WEB, TABLET & <br>MOBILE</p>
-     <div class="separator-2"></div>
-     <h6>Get Started</h6>
-     <div class="red-line"></div>
-<div class="separator-3">
-</div>
-  
-<div class="market-container">
-  <a href="#"><img src="https://upload.wikimedia.org/wikipedia/commons/thumb/e/eb/Download_on_the_App_Store_Badge_ESMX_RGB_blk.svg/2560px-Download_on_the_App_Store_Badge_ESMX_RGB_blk.svg.png" alt="" class="markets-logo"></a>
-  <a href="#"><img src="https://upload.wikimedia.org/wikipedia/commons/thumb/7/78/Google_Play_Store_badge_EN.svg/2560px-Google_Play_Store_badge_EN.svg.png" alt="" class="markets-logo"></a>
-</div>
-
-</div> 
-
-</div>
-
-     <div class="gt-started-rght">
-       <img src="https://images.squarespace-cdn.com/content/v1/5968ff8c2994ca0bae43cd18/1617998359314-9ENUW9HSPY24VFWXC3IK/laptopandiphone.png" alt="">
-     </div>
-
-</section>
-<section>
-
-</section>
-<footer>
- <div class="footer-wrapper" id="contact">
-<img id="fender-logo-footer" src="https://cdn.freebiesupply.com/logos/large/2x/fender-3-logo-png-transparent.png" alt="fender-logo">
-
-
-<div class="footer-text-and-form">
-  <div class="footer-text">
-<h5 class="footer-title">Don't miss out!</h5>
-
-<p class="all-p p-footer">Be the first to know about new products,<br> featured content, exclusive offers and giveaways.</p>
-
-</div>
-<div class="input">
-      <form id="form" action="https://www.freecodecamp.com/email-submit">
-        <input type="email" name="email" id="email" placeholder="Enter your Email address" required>
-        <input type="submit" id="submit">
-        
-      </form>
-     
-    </div>
-</div>
-      <div class="footer-links">
-         <div class="links-container">
-           <div class="grey-line"></div>
-           <span class="footer-link-header">Products</span>
-           <a href="#" class="links-animation">Electric Guitars</a>
-           <a href="#" class="links-animation">Stratocaster</a>
-           <a href="#" class="links-animation">Telecaster</a>
-           <a href="#" class="links-animation">Guitar Amplifier</a>
-           <a href="#" class="links-animation">Basses</a>
-         </div>
-
-         <div class="links-container">
-           <div class="grey-line"></div>
-           <span class="footer-link-header">Company</span>
-           <a href="#" class="links-animation">About</a>
-           <a href="#" class="links-animation">Contact Us</a>
-           <a href="#" class="links-animation">Careers</a>
-           <a href="#" class="links-animation">Newsroom</a>
-           <a href="#" class="links-animation">Fender Play Foundation</a>
-         </div>
-
-         <div class="links-container">
-           <div class="grey-line"></div>
-           <span class="footer-link-header">More from Fender</span>
-           <a href="#" class="links-animation">Online Guitar Tuner</a>
-           <a href="#" class="links-animation">Tuner App</a>
-           <a href="#" class="links-animation">Telecaster</a>
-           <a href="#" class="links-animation">Fender Play Gift Cards</a>
-           <a href="#" class="links-animation">Fender Play Student</a>
-         </div>
-
-         <div class="links-container">
-           <div class="grey-line"></div>
-           <span class="footer-link-header">Customer Service</span>
-           <a href="#" class="links-animation">Support</a>
-           <a href="#" class="links-animation">Find a Dealer</a>
-           <a href="#" class="links-animation">Store Policies</a>
-           <a href="#" class="links-animation">Warranty</a>
-           <a href="#" class="links-animation">Manuals</a>
-         </div>
-
-         <div class="links-container">
-           <div class="grey-line"></div>
-           <span class="footer-link-header">Account</span>
-           <a href="#" class="links-animation">My Account</a>
-           <a href="#" class="links-animation">Order Status</a>
-           <a href="#" class="links-animation">Returns & Exchanges</a>
-         </div>
       </div>
-     
-</div>
-<div class="copy-legals">
-  <div class="grey-line-legal"></div>
- <span class="copyright">Copyright ©2022. Fender Musical Instruments Corporation. All Rights Reserved.</span>
-      <div class="legals">
-  <a href="#" class="links-animation">Privacy Policy</a>
-  <a href="#" class="links-animation">Terms & Condition</a>
-  <a href="#" class="links-animation">Suply Chain Transparency</a>
-  <a href="#" class="links-animation">Modern Slavery Act 2019</a>
 
-</div>
-</div>
-</footer>
-<script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
-  <script src="https://cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.min.js"></script>
-<script src="slider.js"></script>
-</body>
+      <div class="gt-started-rght">
+        <img
+          src="https://images.squarespace-cdn.com/content/v1/5968ff8c2994ca0bae43cd18/1617998359314-9ENUW9HSPY24VFWXC3IK/laptopandiphone.png"
+          alt=""
+        />
+      </div>
+    </section>
+    <section></section>
+    <footer>
+      <div class="footer-wrapper" id="contact">
+        <img
+          id="fender-logo-footer"
+          src="https://cdn.freebiesupply.com/logos/large/2x/fender-3-logo-png-transparent.png"
+          alt="fender-logo"
+        />
+
+        <div class="footer-text-and-form">
+          <div class="footer-text">
+            <h5 class="footer-title">Don't miss out!</h5>
+
+            <p class="all-p p-footer">
+              Be the first to know about new products,<br />
+              featured content, exclusive offers and giveaways.
+            </p>
+          </div>
+          <div class="input">
+            <form id="form" action="https://www.freecodecamp.com/email-submit">
+              <input
+                type="email"
+                name="email"
+                id="email"
+                placeholder="Enter your Email address"
+                required
+              />
+              <input type="submit" id="submit" />
+            </form>
+          </div>
+        </div>
+        <div class="footer-links">
+          <div class="links-container">
+            <div class="grey-line"></div>
+            <span class="footer-link-header">Products</span>
+            <a href="#" class="links-animation">Electric Guitars</a>
+            <a href="#" class="links-animation">Stratocaster</a>
+            <a href="#" class="links-animation">Telecaster</a>
+            <a href="#" class="links-animation">Guitar Amplifier</a>
+            <a href="#" class="links-animation">Basses</a>
+          </div>
+
+          <div class="links-container">
+            <div class="grey-line"></div>
+            <span class="footer-link-header">Company</span>
+            <a href="#" class="links-animation">About</a>
+            <a href="#" class="links-animation">Contact Us</a>
+            <a href="#" class="links-animation">Careers</a>
+            <a href="#" class="links-animation">Newsroom</a>
+            <a href="#" class="links-animation">Fender Play Foundation</a>
+          </div>
+
+          <div class="links-container">
+            <div class="grey-line"></div>
+            <span class="footer-link-header">More from Fender</span>
+            <a href="#" class="links-animation">Online Guitar Tuner</a>
+            <a href="#" class="links-animation">Tuner App</a>
+            <a href="#" class="links-animation">Telecaster</a>
+            <a href="#" class="links-animation">Fender Play Gift Cards</a>
+            <a href="#" class="links-animation">Fender Play Student</a>
+          </div>
+
+          <div class="links-container">
+            <div class="grey-line"></div>
+            <span class="footer-link-header">Customer Service</span>
+            <a href="#" class="links-animation">Support</a>
+            <a href="#" class="links-animation">Find a Dealer</a>
+            <a href="#" class="links-animation">Store Policies</a>
+            <a href="#" class="links-animation">Warranty</a>
+            <a href="#" class="links-animation">Manuals</a>
+          </div>
+
+          <div class="links-container">
+            <div class="grey-line"></div>
+            <span class="footer-link-header">Account</span>
+            <a href="#" class="links-animation">My Account</a>
+            <a href="#" class="links-animation">Order Status</a>
+            <a href="#" class="links-animation">Returns & Exchanges</a>
+          </div>
+        </div>
+      </div>
+      <div class="copy-legals">
+        <div class="grey-line-legal"></div>
+        <span class="copyright"
+          >Copyright ©2022. Fender Musical Instruments Corporation. All Rights
+          Reserved.</span
+        >
+        <div class="legals">
+          <a href="#" class="links-animation">Privacy Policy</a>
+          <a href="#" class="links-animation">Terms & Condition</a>
+          <a href="#" class="links-animation">Suply Chain Transparency</a>
+          <a href="#" class="links-animation">Modern Slavery Act 2019</a>
+        </div>
+      </div>
+    </footer>
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.min.js"></script>
+    <script src="slider.js"></script>
+    <script src="javascript.js"></script>
+  </body>
 </html>
